@@ -209,6 +209,7 @@ namespace Sec
                 idp = Convert.ToString(registro["Id"]);
             }
 
+            // Error al insertar tipo de dato SET en la BBDD
             try
             {
                 if (checksano.Checked == true)
