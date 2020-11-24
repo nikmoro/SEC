@@ -28,14 +28,6 @@ namespace Sec
             Application.Exit();
         }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    Form atras = new Inicio();
-        //    atras.Show();
-
-        //    this.Hide();
-        //}
-
         private void Historial_Load(object sender, EventArgs e)
         {
             cmd = new MySqlCommand("Select nombre from paciente", Conexion.obtenerconexion());
@@ -62,7 +54,6 @@ namespace Sec
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string valor = comboBox1.Text;
-            //label1.Text = valor;
             DataTable dtdatos = new DataTable();
             ad = new MySqlDataAdapter("Select p.idpaciente as 'No. de Paciente', e.idexpediente as 'No. Expediente' from paciente p, expediente e where e.fk_idpaciente =p.idpaciente and p.nombre='" + valor + "';", Conexion.obtenerconexion());
             ad.Fill(dtdatos);

@@ -18,7 +18,6 @@ namespace Sec
         public string nombre, envio,idp,sano,pte,simple,comp,conj,glau,hiper,pres,sos,cata,reti,mixto,hipers,hiperc;
         public string diabet,hipert,alergi,cirugi,trauma,gotas,lentes,glucoma,od,oi;
 
-
         public string diabetano, hipertano, alergicual, cirugicual, traumacuando, gotascuales, lentesgx;
         public string diabettrata, hfdiabe, hfdiabequien, hipertrata, hfhiper, hfhiperquien, hfglau,hfglauquien,observa;
 
@@ -29,10 +28,6 @@ namespace Sec
             this.BackgroundImage = img;
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    Application.Exit();
-        //}
 
         private void richTextBox3_TextChanged(object sender, EventArgs e)
         {
@@ -46,7 +41,6 @@ namespace Sec
         private void horatimer_Tick(object sender, EventArgs e)
         {
             lblreloj.Text = DateTime.Now.ToLongTimeString();
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Metodo que muestra los datos del paciente seleccionado en el combobox
@@ -88,7 +82,6 @@ namespace Sec
                 hfglau = Convert.ToString(registro2["hf_glau"]);
                 hfglauquien = Convert.ToString(registro2["hf_glau_quien"]);
                 observa = Convert.ToString(registro2["observa"]);
-
             }
             if (diabet == "si")
             {
@@ -195,10 +188,7 @@ namespace Sec
             txtquien3.Text = hfglauquien;
             richTextBox1.Text = observa;
 
-
-            ////label9.Text = idp;
             nombre = valor;
-
         }
         private void btnguardar_Click(object sender, EventArgs e) //Guardar antecedentes
         {
@@ -270,10 +260,6 @@ namespace Sec
                     hiperc = "Ast. Hipermetropico compuesto";
                 }
 
-
-                //Falta retina       ,'Ast. Miopico compuesto','Ast. Mixto','Ast. Hipermetropio simple','Ast. Hipermetropico compuesto'         
-                //   1                 2                       3                             4                          5                          6                          7                           8                          9                          10                        11                       12                        13                        14                      15                       16                     17                        18                        19                       20                      21                       22                       23                       24                        25                      26                      27                         28                       29                    30                       31                        32                       33                      34                         35                       36                    37                     38                       39                       40                        41                        42                      43                    44                         45                   46                        47                       48                      49                  50                   51                      52                     53                       54                         55                       56                     57                      58                        59                          60                       61                        62                      63                     64                       65                     66                        67                         68                        69                     70                       71                        72                   73                 74                   75                 76                    77                           78                     79                      80                       81                        82                          83                         84                      85                         86                      87                        88                          89                        90                         91                      92                       93                           94                        95                       96                        97                      98                    99                     100                101                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    conj,glau,hiper,pres,sos,cata,reti                                                                                               //mixto,hipers,hiperc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                //fecha = dateTimePicker1.Value.ToString();
                 cmd = new MySqlCommand(" insert into expediente(fk_idpaciente,motivo,od_lej,od_ad,od_cer,oi_lej,oi_ad,oi_cer,lej1,cer1,lej2,cer2,rs_od_esf,rs_od_cil,rs_od_ej,rs_od_lej,rs_od_ad,rs_od_cer,rs_oi_esf,rs_oi_cil,rs_oi_ej,rs_oi_lej,rs_oi_ad,rs_oi_cer,sc_od_esf,sc_od_cil,sc_od_ej,sc_od_lej,sc_od_auto,sc_oi_esf,sc_oi_cil,sc_oi_ej,sc_oi_lej,sc_oi_auto,reti_l11,reti_l13,reti_l21,reti_l23,mo_od,mo_io,rp_od,rp_oi,pre_od_pp,pre_oi_pp,pre_od_dip,pre_oi_dip,pre_od_dnp,pre_oi_dnp,pre_od_dt,pre_oi_dt,ar_od_k,ar_oi_k,ar_od_dk,ar_oi_dk,ar_od_ac,ar_oi_ac,ar_od_aj,ar_oi_aj,opl_od_esf,opl_od_cil,opl_od_ej,opl_od_ad,opl_od_dnp,opl_od_dip,opl_alt,opl_od_aco,opl_oi_esf,opl_oi_cil,opl_oi_ej,opl_oi_ad,opl_oi_dnp,opl_oi_aco,p,v,h,d,observa,bio_od_anex,bio_oi_anex,bio_od_conj,bio_oi_conj,bio_od_cor,bio_oi_cor,bio_od_cam,bio_oi_cam,bio_od_cri,bio_oi_cri,fond_od_ret,fond_oi_ret,fond_od_mac,fond_oi_mac,fond_od_ner,fond_oi_ner,plan,ciclo1,cliclo2,clico3,hora,diag,otro,ame) values ('" + idp + "','" + richTextBox5.Text +"','" + txtodlejos1.Text + "','" + txtadicion.Text + "','" + txtodcerca1.Text + "','" + txtoilejos2.Text + "','" + txtadicion2.Text + "','" + txtoicerca1.Text + "','" + txtodlejos2.Text + "','" + txtodcerca2.Text + "','" + txtlejos2.Text + "','" + txtoicerca2.Text + "','" + txtodesf1.Text + "','" + txtodcil1.Text + "','" + txtodeje1.Text + "','" + txtodavl1.Text + "','" + txtodadi.Text + "','" + txtodavc1.Text + "','" + txtoiesf1.Text + "','" + txtoicil1.Text + "','" + txtoieje1.Text + "','" + txtoiavl1.Text + "','" + txtoiadi.Text + "','" + txtoiavc1.Text + "','" + txtodesf2.Text + "','" + txtodcil2.Text + "','" + txtodeje2.Text + "','" + txtodavl2.Text + "','" + txtodauto.Text + "','" + txtoiesf2.Text + "','" + txtoicil2.Text + "','" + txtoieje2.Text + "','" + txtoiavl2.Text + "','" + txtoiauto.Text + "','" + txtodre1.Text + "','" + txtodre2.Text + "','" + txtoire1.Text + "','" + txtoire2.Text + "','" + txtodmoti.Text + "','" + txtoimoti.Text + "','" + txtodrefle.Text + "','" + txtoirefle.Text + "','" + txtodpp.Text + "','" + txtoipp.Text + "','" + txtoddip.Text + "','" + txtoidip.Text + "','" + txtoddnp.Text + "','" + txtoidnp.Text + "','" + txtoddt.Text + "','" + txtoidt.Text + "','" + txtodk.Text + "','" + txtoik.Text + "','" + txtoddifk.Text + "','" + txtoidifk.Text + "','" + txtodcorn.Text + "','" + txtoicorn.Text + "','" + txtodjav.Text + "','" + txtoijav.Text + "','" + txtodesfera.Text + "','" + txtodcilindro.Text + "','" + txtodeje.Text + "','" + txtodadd.Text + "','" + txtodanp.Text + "','" + txtdip.Text + "','" + txtaltura.Text + "','" + txtodaco.Text + "','" + txtoiesfera.Text + "','" + txtoicilindro.Text + "','" + txtoieje.Text + "','" + txtoiadd.Text + "','" + txtoianp.Text + "','" + txtoiaco.Text + "','" + txtp.Text + "','" + txtv.Text + "','" + txth.Text + "','" + txtd.Text + "','" + richTextBox3.Text + "','" + txtodane.Text + "','" + txtoiane.Text + "','" + txtodconj.Text + "','" + txtoiconj.Text + "','" + txtodcornea.Text + "','" + txtoicornea.Text + "','" + txtodcam.Text + "','" + txtoicam.Text + "','" + txtodcrista.Text + "','" + txtoicrista.Text + "','" + txtodretina.Text + "','" + txtoiretina.Text + "','" + txtodmacu.Text + "','" + txtoimacu.Text + "','" + txtodnervio.Text + "','" + txtoinervio.Text + "','" + richTextBox2.Text + "','" + txtciclo.Text + "','" + txtciclo2.Text + "','" + txtciclo3.Text + "','" + txthoratp.Text + "','" + sano +","+ pte + ","+ conj + "," + glau + "," + hiper + "," + pres + "," + sos + "," + cata + "," + reti + "','" + txtotro.Text + "','" + simple + "," +comp + "," + mixto + "," + hipers + "," + hiperc + "');", Conexion.obtenerconexion());
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Se guardo correctamente");
@@ -282,14 +268,6 @@ namespace Sec
             {
                 MessageBox.Show("Error de insercion" + ex.ToString());
             }
-
-            //Form atras = new Inicio();
-            //atras.Show();
-
-            //this.Hide();
-            //richTextBox8.Text = "";
-            //richTextBox9.Text = "";
-            //richTextBox10.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)

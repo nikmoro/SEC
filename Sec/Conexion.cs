@@ -16,13 +16,10 @@ namespace Sec
             try
             {
                 conectar.Open();
-
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al conectar" + ex.ToString());
-
             }
             return conectar;
         }

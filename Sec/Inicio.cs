@@ -67,7 +67,7 @@ namespace Sec
 
         private void fehcatimer_Tick(object sender, EventArgs e)
         {
-            //lblfecha.Text = DateTime.Now.ToLongDateString();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)

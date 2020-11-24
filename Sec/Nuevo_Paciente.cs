@@ -46,7 +46,6 @@ namespace Sec
             {
                 btnguardar.Visible = false;
                 btnactu.Visible = true;
-                //    btneli.Visible = true;
                 DataTable dtdatos = new DataTable();
                 cmd = new MySqlCommand("Select idpaciente as 'ID',Sexo,(edad) as 'Edad',lee,Tel,ocupa from paciente where nombre ='" + txtnombre.Text + "';", Conexion.obtenerconexion());
                 MySqlDataReader registro = cmd.ExecuteReader();
@@ -58,7 +57,6 @@ namespace Sec
                     txttel.Text = Convert.ToString(registro["Tel"]);
                     genero = Convert.ToString(registro["Sexo"]);
                     id = Convert.ToString(registro["ID"]);
-
                 }
                 if (genero == "H")
                 {
@@ -72,7 +70,6 @@ namespace Sec
                 }
                 else
                     leerno.Checked = true;
-
             }
         }
 
@@ -201,29 +198,12 @@ namespace Sec
                         hfglauco = "No";
                     }
 
-
-
                     try
                     {
                         cmd = new MySqlCommand(" insert into paciente(nombre,edad,sexo,lee,tel,ocupa,app_diabetes,dia_anios,dia_tratamiento,app_hiper,hiper_anios,hiper_tratamiento,alergia,alergia_cual,cirugia,cirugia_cual,trauma,cuando,gotas,gotas_cual,lente,gx_act,od,oi,app_glau,hf_diabetes,hf_dia_quien,hf_hiper,hf_hiper_quien,hf_glau,hf_glau_quien,observa) values ('" + txtnombre.Text + "','" + txtedad.Text + "','" + sexo + "','" + leer + "','" + txttel.Text + "','" + txtocu.Text + "','" + diabe + "','" + txtanos1.Text + "','" + txttrata1.Text + "','" + hiper + "','" + txtanos2.Text + "','" + txttrata2.Text + "','" + aler + "','" + txtalergias.Text + "','" + ciru + "','" + txtciru.Text + "','" + trauma + "','" + txttrauma.Text + "','" + gota + "','" + txtgotas.Text + "','" + lente + "','" + txtgx.Text + "','" + txtod.Text + "','" + txtoi.Text + "','" + glauco + "','" + hfdiabe + "','" + txtdiabe.Text + "','" + hfhiper + "','" + txthiper.Text + "','" + hfglauco + "','" + txtglauco.Text + "','" + richTextBox5.Text + "');", Conexion.obtenerconexion());
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Se guardo correctamente");
-                        //        txtnombre.Text = "";
-                        //        txtdireccion.Text = "";
-                        //        txtedad.Text = "";
-                        //        txtenti.Text = "";
-                        //        txtloca.Text = "";
-                        //        txtmuni.Text = "";
-                        //        txttel.Text = "";
-                        //        richtxtheredados.Text = "";
-                        //        richtxtnopato.Text = "";
-                        //        richtxtpato.Text = "";
-                        //        txtgineco.Text = "";
-                        //        checkBox1.Checked = false;
-                        //        checkBox2.Checked = false;
-                        //        checkadicto.Checked = false;
-                        //        checkalcoholico.Checked = false;
-                        //        checkalcoholico.Checked = false;
+
                         Form volver = new Inicio();
                         volver.Show();
                         this.Hide();
