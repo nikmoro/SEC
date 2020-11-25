@@ -114,7 +114,8 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(1112, 683);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";

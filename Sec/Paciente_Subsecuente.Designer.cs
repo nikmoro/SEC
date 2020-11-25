@@ -3382,7 +3382,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(410, 29);
+            this.richTextBox1.Location = new System.Drawing.Point(410, 43);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(618, 158);
             this.richTextBox1.TabIndex = 165;
@@ -3393,7 +3393,7 @@
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(407, 8);
+            this.label33.Location = new System.Drawing.Point(407, 22);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(118, 20);
             this.label33.TabIndex = 164;
@@ -3401,7 +3401,7 @@
             // 
             // txtquien3
             // 
-            this.txtquien3.Location = new System.Drawing.Point(27, 167);
+            this.txtquien3.Location = new System.Drawing.Point(27, 181);
             this.txtquien3.Name = "txtquien3";
             this.txtquien3.Size = new System.Drawing.Size(348, 23);
             this.txtquien3.TabIndex = 162;
@@ -3411,7 +3411,7 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label32.Location = new System.Drawing.Point(22, 149);
+            this.label32.Location = new System.Drawing.Point(22, 163);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(57, 15);
             this.label32.TabIndex = 163;
@@ -3419,7 +3419,7 @@
             // 
             // txtquien2
             // 
-            this.txtquien2.Location = new System.Drawing.Point(27, 104);
+            this.txtquien2.Location = new System.Drawing.Point(27, 118);
             this.txtquien2.Name = "txtquien2";
             this.txtquien2.Size = new System.Drawing.Size(348, 23);
             this.txtquien2.TabIndex = 160;
@@ -3429,7 +3429,7 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label31.Location = new System.Drawing.Point(22, 86);
+            this.label31.Location = new System.Drawing.Point(22, 100);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(57, 15);
             this.label31.TabIndex = 161;
@@ -3437,7 +3437,7 @@
             // 
             // txtquien1
             // 
-            this.txtquien1.Location = new System.Drawing.Point(27, 41);
+            this.txtquien1.Location = new System.Drawing.Point(27, 55);
             this.txtquien1.Name = "txtquien1";
             this.txtquien1.Size = new System.Drawing.Size(348, 23);
             this.txtquien1.TabIndex = 149;
@@ -3447,7 +3447,7 @@
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label30.Location = new System.Drawing.Point(22, 23);
+            this.label30.Location = new System.Drawing.Point(22, 37);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(57, 15);
             this.label30.TabIndex = 159;
@@ -3458,7 +3458,7 @@
             this.Noglau.AutoSize = true;
             this.Noglau.BackColor = System.Drawing.Color.Transparent;
             this.Noglau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Noglau.Location = new System.Drawing.Point(186, 130);
+            this.Noglau.Location = new System.Drawing.Point(186, 144);
             this.Noglau.Name = "Noglau";
             this.Noglau.Size = new System.Drawing.Size(44, 19);
             this.Noglau.TabIndex = 158;
@@ -3470,7 +3470,7 @@
             this.Siglau.AutoSize = true;
             this.Siglau.BackColor = System.Drawing.Color.Transparent;
             this.Siglau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Siglau.Location = new System.Drawing.Point(144, 130);
+            this.Siglau.Location = new System.Drawing.Point(144, 144);
             this.Siglau.Name = "Siglau";
             this.Siglau.Size = new System.Drawing.Size(37, 19);
             this.Siglau.TabIndex = 157;
@@ -3482,7 +3482,7 @@
             this.Nohip.AutoSize = true;
             this.Nohip.BackColor = System.Drawing.Color.Transparent;
             this.Nohip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Nohip.Location = new System.Drawing.Point(186, 67);
+            this.Nohip.Location = new System.Drawing.Point(186, 81);
             this.Nohip.Name = "Nohip";
             this.Nohip.Size = new System.Drawing.Size(44, 19);
             this.Nohip.TabIndex = 156;
@@ -3494,7 +3494,7 @@
             this.Sihip.AutoSize = true;
             this.Sihip.BackColor = System.Drawing.Color.Transparent;
             this.Sihip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Sihip.Location = new System.Drawing.Point(144, 67);
+            this.Sihip.Location = new System.Drawing.Point(144, 81);
             this.Sihip.Name = "Sihip";
             this.Sihip.Size = new System.Drawing.Size(37, 19);
             this.Sihip.TabIndex = 155;
@@ -3506,7 +3506,7 @@
             this.Nodia.AutoSize = true;
             this.Nodia.BackColor = System.Drawing.Color.Transparent;
             this.Nodia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Nodia.Location = new System.Drawing.Point(186, 4);
+            this.Nodia.Location = new System.Drawing.Point(186, 18);
             this.Nodia.Name = "Nodia";
             this.Nodia.Size = new System.Drawing.Size(44, 19);
             this.Nodia.TabIndex = 154;
@@ -3518,7 +3518,7 @@
             this.Sidia.AutoSize = true;
             this.Sidia.BackColor = System.Drawing.Color.Transparent;
             this.Sidia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Sidia.Location = new System.Drawing.Point(144, 4);
+            this.Sidia.Location = new System.Drawing.Point(144, 18);
             this.Sidia.Name = "Sidia";
             this.Sidia.Size = new System.Drawing.Size(37, 19);
             this.Sidia.TabIndex = 153;
@@ -3530,7 +3530,7 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(24, 130);
+            this.label27.Location = new System.Drawing.Point(24, 144);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(73, 16);
             this.label27.TabIndex = 152;
@@ -3541,7 +3541,7 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(24, 67);
+            this.label28.Location = new System.Drawing.Point(24, 81);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(87, 16);
             this.label28.TabIndex = 151;
@@ -3552,7 +3552,7 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(24, 4);
+            this.label29.Location = new System.Drawing.Point(24, 18);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(114, 16);
             this.label29.TabIndex = 150;
