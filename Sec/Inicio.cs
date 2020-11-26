@@ -73,7 +73,7 @@ namespace Sec
         private void button5_Click(object sender, EventArgs e)
         {
             Process proceso = new Process();
-            proceso.StartInfo.FileName = @"C:\Users\NIKMO\Documents\UNACH\S8\Interacción Humano - Computadora\Óptica\SEC\Manual de Usuario SEC.pdf";
+            proceso.StartInfo.FileName = @"C:\Users\NIKMO\Documents\UNACH\S8\Interacción Humano - Computadora\Óptica\SEC2\Manual de Usuario SEC.pdf";
             proceso.Start();
         }
     }
